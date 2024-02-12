@@ -1,0 +1,12 @@
+<%= render @post %>
+
+<% if @post.user == current_user %>
+  <div class="text-center edit-links">
+    <%= link_to "Editar este post", edit_post_path(@post) %> |
+    <%= link_to "Lista de posts", posts_path %>
+  </div>
+<% else %>
+  <div class="text-center edit-links">
+    <%= link_to "Lista de posts", posts_path %>
+  </div>
+<% end %>

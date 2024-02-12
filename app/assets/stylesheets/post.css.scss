@@ -1,0 +1,125 @@
+.main-wrapper {
+  margin-top: 15px
+}
+
+.image {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.posts-wrapper {
+  padding-top: 40px;
+  margin: 0 auto;
+  max-width: 642px;
+  width: 100%;
+}
+
+.post {
+  background-color: #fff;
+  border-color: #edeeee;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  margin-bottom: 60px;
+  .post-head {
+    flex-direction: row;
+    height: 64px;
+    color: #125688;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    .avatar {
+      display: inline;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #d62d2d;
+      }
+    }
+    .user-name, .time-ago {
+      display: inline;
+      margin-left: 5px;
+    }
+    .user-name {
+      font-weight: 800;
+    }
+    .time-ago {
+      color: #A5A7AA;
+      float: right;
+    }
+  }
+}
+
+.post-bottom {
+  .user-name, .comment-content {
+    display: inline;
+  }
+  .description {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  .user-name {
+    font-weight: 500;
+    margin-right: 0.3em;
+    color: #125688;
+    font-size: 15px;
+  }
+  .user-name, .caption-content {
+    display: inline;
+  }
+  .comment {
+    margin-top: 7px;
+    .user-name {
+      font-weight: 800;
+      margin-right: 0.3em;
+    }
+    .time-ago {
+      text-align: right;
+      color: #777;
+      font-size: 10px;
+    }
+    padding-bottom: 15px;
+  }
+  margin-bottom: 7px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.comment_content {
+  font-size: 15px;
+  line-height: 18px;
+  border: medium none;
+  width: 100%;
+  color: #4B4F54;
+}
+
+.comment-like-form {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  min-height: 68px;
+  align-items: center;
+  border-top: 1px solid #EEEFEF;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-wrapper {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #eeefef;
+  border-radius: 3px;
+}
+
+.edit-links {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

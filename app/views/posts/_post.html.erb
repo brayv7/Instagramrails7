@@ -1,0 +1,30 @@
+<div id="<%= dom_id post %>" class="posts-wrapper row">
+  <div class="post">
+    <div class="image center-block">
+      <%= image_tag post.squared_img, class:'img-fluid' %>
+    </div>
+    <div class="post-bottom">
+      <div class="post-head">
+        <div class="avatar">
+          <%= image_tag "https://robohash.org/#{post.user&.email}.png?set=set4" %>
+        </div>
+        <div class="user-name">
+          <%= post.user_name if post.user %>
+        </div>
+        <div class="time-ago">
+          <%= l post.created_at, format: :short %>
+        </div>
+      </div>
+      <div class="description">
+        <%= post.description %>
+      </div>
+      <hr>
+      <div id="comments">
+        <% post.comments.each do |comment| %>
+          <%= render "comments/comment", comment: comment %>
+        <% end %>
+      </div>
+    </div>
+    <%= render "comments/new", post: post %>
+  </div>
+</div>

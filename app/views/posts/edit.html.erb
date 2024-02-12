@@ -1,0 +1,16 @@
+<h1>Editing post</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+
+<div class="form-wrapper">
+  <h2>Actualizar un post</h2>
+  <%= render "form", post: @post %>
+</div>
+
+<div class="text-center edit-links">
+  <%= link_to "Mirá este post", @post %> |
+  <%= link_to "Eliminar este Post", post_path(@post), data: { turbo_method: :delete, turbo_confirm: "¿Estás seguro que quieres eliminar este post?" } %> |
+  <%= link_to "Lista de posts", posts_path %>
+</div>

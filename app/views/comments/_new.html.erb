@@ -1,0 +1,11 @@
+<% if current_user %>
+  <div class="comment-like-form row">
+    <div class="comment-form col">
+      <%= form_for [post, post.comments.new] do |f| %>
+        <div class="form-group">
+          <%= f.text_field :content, class: 'form-control', placeholder: 'Añade un comentario...' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>
